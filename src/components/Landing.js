@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-function UncontrolledExample() {
+function LandingCar() {
     return (
         <Carousel>
             <Carousel.Item>
@@ -33,6 +33,6 @@ function UncontrolledExample() {
 
 export function Landing() {
     return (
-       <UncontrolledExample/>
+       <LandingCar/>
     );
 }
