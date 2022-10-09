@@ -1,12 +1,14 @@
 export const PICTURES_DATA = [
     {
         id: 1,
-        author: "Aziz Acharki",
-        name: "aziz-acharki-oEibQEiq2cM-unsplash.jpg"
+        singer: "John Denver",
+        name: "Country Roads",
+        tabs: "CountryRoads",
     },
     {
         id: 2,
-        author: "Aziz Acharki",
-        name: "aziz-acharki-U3C79SeHa7k-unsplash.jpg"
+        singer: "Naomi Scott",
+        name: "A Whole New World",
+        tabs: "WholeNewWorld",
     },
 ];
