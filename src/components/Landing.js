@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
+import {About} from "./About";
 
-function LandingCar() {
+export function Landing() {
     return (
         <Carousel>
             <Carousel.Item>
@@ -30,9 +31,3 @@ function LandingCar() {
 
 
 
-
-export function Landing() {
-    return (
-       <LandingCar/>
-    );
-}
