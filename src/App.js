@@ -1,35 +1,29 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-tabs/style/react-tabs.css';
-import './App.css';
-import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
+import {Routes, Route, Link, HashRouter,} from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import TabPage from "./pages/TabPage";
 import {TAB_DATA} from "./data/data";
+import './App.css';
 
 
 function App() {
-  return (
-      <>
+    return (
+        <>
+            <HashRouter>
+                <nav className={"navMenu"}>
+                    <Link className={"navItem"} to="/">Home</Link>
+                    <Link className={"navItem"} to="tabs">Tabs</Link>
+                    <div className="dot"/>
+                </nav>
+                <Routes>
+                    <Route path="/" element={<LandingPage/>}/>
+                    <Route path="tabs" element={<TabPage tabs={TAB_DATA}/>}/>
+                </Routes>
+            </HashRouter>
+        </>
 
-        <Tabs>
-          <TabList>
-            <Tab>home</Tab>
-              <Tab>tabs</Tab>
-          </TabList>
-
-            <TabPanel>
-                <LandingPage/>
-            </TabPanel>
-
-            <TabPanel>
-                <TabPage tabs={TAB_DATA}/>
-            </TabPanel>
-        </Tabs>
-
-
-      </>
-
-  );
+    );
 }
 
 export default App;
