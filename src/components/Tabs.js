@@ -17,7 +17,7 @@ export function Tabs(props) {
     const {tabs, title} = props
     return (
         <Section title={title}>
-            {tabs.map(t => <Tab key={t.name} tab={t}/>)}
+            {tabs?.map(t => <Tab key={t.name} tab={t}/>)}
         </Section>
     );
 }
