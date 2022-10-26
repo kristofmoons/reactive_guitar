@@ -1,10 +1,18 @@
-import {Tabs} from "../components/Tabs";
-import {TAB_DATA} from "../data/data";
+import {collection} from 'firebase/firestore'
+import {firestoreDB} from "../services/firebase";
+import {useCollectionData} from "react-firebase-hooks/firestore";
 
-export default function TabPage(props) {
-    const {tabs} = props;
+export default function TabPage() {
+    const query = collection(firestoreDB, 'guitarTabs');
+    const [values, loading, error]= useCollectionData(query);
+    console.log({values,loading,error});
+
 
     return (
-        <Tabs tabs={tabs} title={"Tabs"}/>
+        <>
+            <div>tabs from db</div>
+            {/*<Tabs tabs={tabs} title={"Tabs"}/>*/}
+
+        </>
     );
 }

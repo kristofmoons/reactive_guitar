@@ -6,7 +6,7 @@ function Tab(props) {
     const {tab} = props;
     return (
         <Col>
-            <MyCard title={tab.name} picture={tab.tabCode}>
+            <MyCard title={tab.name}>
                 {tab.singer}
             </MyCard>
         </Col>
