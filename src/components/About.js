@@ -4,11 +4,11 @@ import Col from 'react-bootstrap/Col';
 
 export function About() {
     return (
-        <section id="sec-about" className="sec-about pt-5 pb-5">
+        <section id="sec-about" className="sec-about pt-3 pb-5">
             <Container>
                 <Row justify-content-center text-center>
                     <Col col-md-10 col-lg-8>
-                        <h1 className="h4">About us</h1>
+                        <h1>About us</h1>
                         <p className="mt-4 mb-4">The Best Way to Conquer Your Guitar Goals. Learn To Play Your Favorite
                             Songs!There’s nothing better than playing
                             the songs you love! So you’ll get tabs for popular songs from all eras and
