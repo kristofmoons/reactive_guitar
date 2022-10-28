@@ -2,6 +2,7 @@ import {collection} from 'firebase/firestore'
 import {firestoreDB} from "../services/firebase";
 import {useCollectionData} from "react-firebase-hooks/firestore";
 import {Tabs} from "../components/Tabs";
+import {FilterSlider} from "../components/FilterSlider";
 
 const tabConverter = {
     toFirestore: undefined,
@@ -20,6 +21,7 @@ export default function TabPage() {
     return (
         <>
             <Tabs tabs={values} title={"Tabs"}/>
+            <FilterSlider/>
 
         </>
     );
