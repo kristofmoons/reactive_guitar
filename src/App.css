@@ -153,7 +153,7 @@
 }
 
 .checkbox-trigger:checked {
-  left: 202px;
+  left: 40vw;
 }
 
 .checkbox-trigger:checked + .menu-content .hamburger-menu {
@@ -174,8 +174,8 @@
   margin-top: 0.4em;
 }
 
-.checkbox-trigger:checked + .menu-content ul {
-  width: 200px;
+.checkbox-trigger:checked + .menu-content Form {
+  width: 40vw;
   height: 200px;
   transition: width 0.7s ease 0.3s, height 0.3s ease;
 }
@@ -187,7 +187,7 @@
   float: left;
 }
 
-.menu-content ul {
+.menu-content Form {
   display: block;
   padding-left: 0;
   padding-top: 1em;
@@ -199,7 +199,7 @@
   transition: height 0.3s ease 0.7s, width 0.7s ease;
 }
 
-.menu-content ul li {
+.menu-content Form Form.Label Form.Control {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -207,9 +207,11 @@
   transition: color 0.5s, background 0.5s;
 }
 
-.menu-content ul li:hover {
-  color:  #fddb3a;
-}
+/*.menu-content  li:hover {*/
+/*  color:  #fddb3a;*/
+/*}*/
+/*filterSlider*/
+
 
 @media (min-width: 992px) {
   .masthead {

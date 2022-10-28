@@ -1,18 +1,18 @@
-export function FilterSlider() {
+
+export function FilterSlider(props) {
+    const {children} = props;
+
     return (
-        <span className="container">
+
+        <span className="container" style={{position: "fixed", top: "20vh", left: "-12px",zIndex:"1"}}>
       <span className="checkbox-container">
         <input className="checkbox-trigger" type="checkbox"/>
         <span className="menu-content">
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
+                {children}
           <span className="hamburger-menu"/>
         </span>
       </span>
     </span>
-);
+    );
 
 }
