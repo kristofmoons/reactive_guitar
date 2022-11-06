@@ -34,7 +34,6 @@ export default function TabPage() {
                     </Form>
                 }
             </FilterSlider>
-
             <Tabs tabs={values?.filter(t => t.name.includes(search))} title={"Tabs"}/>
 
         </>

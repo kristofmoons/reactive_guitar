@@ -1,4 +1,4 @@
-import {Button, Container, Row} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 
 export function Section(props){
     const {title, children} = props;

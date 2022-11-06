@@ -1,8 +1,10 @@
+import {ScrollDownSection} from "./ScrollDownSection";
+
 export function Landing() {
     return (
         <div style={{backgroundImage: "url('./images/landing2.png')", backgroundRepeat:"no-repeat",
             backgroundSize: "cover" }}>
-            <div className="masthead" style={{height:"60vh"}}>
+            <div className="masthead" style={{height:"100vh"}}>
                 <div className="masthead-content text-white">
                     <div style={{width: "100%", marginRight: "auto", marginLeft: "auto",
                         paddingRight: "1.5rem", paddingLeft: "1.5rem"}}>
@@ -13,6 +15,8 @@ export function Landing() {
                     </div>
                 </div>
             </div>
+
+            <ScrollDownSection/>
         </div>
     );
 }
