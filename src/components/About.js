@@ -1,8 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {useEffect, useState} from "react";
 
 export function About() {
+    const [member, setMember] = useState(350);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setMember((member) => member + 1);
+        }, 1000);
+    });
+
     return (
         <section id="sec-about" className="sec-about pt-3 pb-5">
             <Container>
@@ -19,7 +28,7 @@ export function About() {
 
                 <Row mt={4}>
                     <Col sm={4}>
-                        <h4>350</h4>
+                        <h4>{member}</h4>
                         <hr/>
                         <h5>members</h5>
                     </Col>
