@@ -58,13 +58,13 @@
   opacity: 1;
 }
 
-/*.navMenu Link:nth-child(3):hover ~ .dot {*/
-/*  -webkit-transform: translateX(200px);*/
-/*  transform: translateX(200px);*/
-/*  -webkit-transition: all 0.2s ease-in-out;*/
-/*  transition: all 0.2s ease-in-out;*/
-/*  opacity: 1;*/
-/*}*/
+.navMenu Link:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 
 /*.navMenu Link:nth-child(4):hover ~ .dot {*/
 /*  -webkit-transform: translateX(285px);*/
