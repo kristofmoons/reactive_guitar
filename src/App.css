@@ -169,6 +169,11 @@
   }
 }
 /*scroll down button */
+/*section css*/
+.sectionMargin{
+padding-left:40px
+}
+/*section css*/
 /*filterSlider*/
 
 .checkbox-container {
@@ -304,4 +309,9 @@
   .masthead {
     width: 65vw;
   }
-}
+  .sectionMargin{
+    padding-left:0;
+    margin-left: 15vw;
+    margin-right: 18vw;
+  }
+  }

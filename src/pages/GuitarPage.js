@@ -22,7 +22,9 @@ export default function GuitarPage() {
 
 
     return (
-        <>
+
+            <div style={{backgroundImage: "url('./images/landing1.png')", backgroundRepeat:"no-repeat",
+                backgroundSize: "cover" }}>
             <FilterSlider>
                 {
                     <Form>
@@ -36,6 +38,6 @@ export default function GuitarPage() {
             </FilterSlider>
             <Guitars guitars={values?.filter(g => g.kind.includes(search))} title={"Guitars"}/>
 
-        </>
+        </div>
     );
 }

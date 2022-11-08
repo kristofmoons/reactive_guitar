@@ -22,7 +22,8 @@ export default function TabPage() {
 
 
     return (
-        <>
+        <div style={{backgroundImage: "url('./images/landing1.png')", backgroundRepeat:"no-repeat",
+        backgroundSize: "cover" }}>>
             <FilterSlider>
                 {
                     <Form>
@@ -36,6 +37,6 @@ export default function TabPage() {
             </FilterSlider>
             <Tabs tabs={values?.filter(t => t.name.includes(search))} title={"Tabs"}/>
 
-        </>
+        </div>
     );
 }
