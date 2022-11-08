@@ -16,7 +16,7 @@ function App() {
                 <nav className={"navMenu"}>
                     <Link className={"navItem"} to="/">Home</Link>
                     <Link className={"navItem"} to="tabs">Tabs</Link>
-                    <Link className={"navItem"} to="guitars">Guitars</Link>
+                    <Link className={"navItem"} style={{marginRight:"20px"}} to="guitars">Guitars</Link>
                     <Link className={"navItem"} to="form">Contact</Link>
                     <div className="dot"/>
                 </nav>

@@ -51,14 +51,14 @@
 }
 
 .navMenu .navItem:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
-.navMenu Link:nth-child(3):hover ~ .dot {
+.navMenu .navItem:nth-child(3):hover ~ .dot {
   -webkit-transform: translateX(200px);
   transform: translateX(200px);
   -webkit-transition: all 0.2s ease-in-out;
@@ -66,13 +66,13 @@
   opacity: 1;
 }
 
-/*.navMenu Link:nth-child(4):hover ~ .dot {*/
-/*  -webkit-transform: translateX(285px);*/
-/*  transform: translateX(285px);*/
-/*  -webkit-transition: all 0.2s ease-in-out;*/
-/*  transition: all 0.2s ease-in-out;*/
-/*  opacity: 1;*/
-/*}*/
+.navMenu .navItem:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
 
 /*navigation menu*/
 /*landing page*/
