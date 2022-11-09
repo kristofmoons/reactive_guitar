@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import {Card} from "react-bootstrap";
+import {mailJSConfig} from "../services/mailJS";
 
 export function FormInput() {
     const form = useRef();
@@ -12,7 +13,7 @@ export function FormInput() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_2dk9k98', 'template_wsjyke7', form.current, 'kzBBe_4NASng7Cd_7')
+        emailjs.sendForm(mailJSConfig.serviceId, 'template_wsjyke7', form.current, mailJSConfig.publicKey)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
