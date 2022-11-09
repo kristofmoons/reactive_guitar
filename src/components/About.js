@@ -6,7 +6,7 @@ import {useLocalStorage} from "../hooks/useLocalStorage";
 
 export function About() {
 
-    const [member, setMember] =useLocalStorage("defaultTabIndex", 350);
+    const [member, setMember] =useLocalStorage("memberIndex", 350);
 
     useEffect(() => {
         setTimeout(() => {
@@ -36,13 +36,13 @@ export function About() {
                     </Col>
 
                     <Col sm={4}>
-                        <h4>2</h4>
+                        <h4>6</h4>
                         <hr/>
                         <h5>artists </h5>
                     </Col>
 
                     <Col sm={4}>
-                        <h4>3</h4>
+                        <h4>7</h4>
                         <hr/>
                         <h5>songs</h5>
                     </Col>

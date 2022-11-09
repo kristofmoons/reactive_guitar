@@ -16,7 +16,7 @@ export function MyCard(props) {
     const {title, children} = props;
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <Card style={{width: '18rem'}}>
+        <Card style={{width: '18rem', marginBottom:"2vh"}}>
             <Card.Img variant="top" src={`images/CountryRoads.png`}/>
             <Card.Body>
                 <OpenCloseButton isOpen={isOpen} onChangeIsOpen={() => setIsOpen(!isOpen)}/>
