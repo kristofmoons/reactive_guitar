@@ -1,13 +1,37 @@
-import {Col} from "react-bootstrap";
+import {Col, Modal} from "react-bootstrap";
 import {MyCard} from "./MyCard";
 import {Section} from "./Section";
+import {useState} from "react";
+import Button from "react-bootstrap/Button";
 
 function Tab(props) {
     const {tab} = props;
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <Col>
+            <Button variant="dark" onClick={handleShow}>
+                view tabs
+            </Button>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{tab.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <img  src={`images/${tab.imgPath}`} alt="leTabs" width="450" height="600"/>
+                    </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
             <MyCard title={tab.name} imgPath={tab.imgPath}>
                 {tab.singer}
+
+
             </MyCard>
         </Col>
     );
