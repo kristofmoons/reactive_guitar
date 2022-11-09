@@ -20,6 +20,10 @@ export default function GuitarPage() {
     const [search, setSearch] = useState("");
     console.log({values, loading, error});
 
+    function editGuitar(guitar) {
+        console.log(`editing guitar ${guitar.kind}`)
+    }
+
 
     return (
 
@@ -36,7 +40,7 @@ export default function GuitarPage() {
                     </Form>
                 }
             </FilterSlider>
-            <Guitars guitars={values?.filter(g => g.kind.includes(search))} title={"Guitars"}/>
+            <Guitars guitars={values?.filter(g => g.kind.includes(search))}  onEditGuitar={editGuitar} title={"Guitars"}/>
 
         </div>
     );
