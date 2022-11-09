@@ -16,7 +16,7 @@ function Guitar(props) {
     const {guitar, onEditGuitar} = props;
     return (
         <Col>
-            <MyCard title={guitar.kind}>
+            <MyCard title={guitar.kind} imgPath={guitar.imgPath}>
                 strings: {guitar.strings}
                 <br/>
                 best to play genre: {guitar.genre}
