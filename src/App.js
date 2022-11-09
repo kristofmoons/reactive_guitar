@@ -9,7 +9,10 @@ import './App.css';
 import GuitarPage from "./pages/GuitarPage";
 
 
+
+
 function App() {
+
     return (
         <>
             <HashRouter>

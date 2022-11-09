@@ -1,10 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
+import {useLocalStorage} from "../hooks/useLocalStorage";
 
 export function About() {
-    const [member, setMember] = useState(350);
+
+    const [member, setMember] =useLocalStorage("defaultTabIndex", 350);
 
     useEffect(() => {
         setTimeout(() => {
