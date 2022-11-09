@@ -3,6 +3,9 @@ import {MyCard} from "./MyCard";
 import {Section} from "./Section";
 import {useState} from "react";
 import Button from "react-bootstrap/Button";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
 
 function Tab(props) {
     const {tab} = props;
@@ -20,6 +23,12 @@ function Tab(props) {
                     <Modal.Title>{tab.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+                    <AudioPlayer
+                        autoPlay
+                        src='music/test.mp3'
+                        onPlay={e => console.log("onPlay")}
+                        // other props here
+                    />
                     <img  src={`images/${tab.imgPath}`} alt="leTabs" width="450" height="600"/>
                     </Modal.Body>
                 <Modal.Footer>
