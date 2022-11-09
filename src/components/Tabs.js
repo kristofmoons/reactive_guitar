@@ -38,8 +38,6 @@ function Tab(props) {
             </Modal>
             <MyCard title={tab.name} imgPath={tab.imgPath}>
                 {tab.singer}
-
-
             </MyCard>
         </Col>
     );
