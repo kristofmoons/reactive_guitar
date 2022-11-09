@@ -44,7 +44,7 @@ export function FormInput() {
             </Form.Group>
 
 
-            <Button variant="dark" type="submit" value="Send">
+            <Button variant="dark" type="submit" value="Send" onClick={() =>alert(`mail has been sent`)}>
                 Submit
             </Button>
         </Form>
