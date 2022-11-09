@@ -24,7 +24,7 @@ function Tab(props) {
                 </Modal.Header>
                 <Modal.Body>
                     <AudioPlayer
-                        src='music/test.mp3'
+                        src={`music/${tab.music}`}
                         onPlay={e => console.log("onPlay")}
                         // other props here
                     />
