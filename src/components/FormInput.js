@@ -22,7 +22,7 @@ export function FormInput() {
     };
 
     return (
-        <div >
+
         <Card className={"m-5"}>
             <Card.Header style={{backgroundColor:"#272727", color:"white"}}>contact form</Card.Header>
 
@@ -59,7 +59,6 @@ export function FormInput() {
             </Card.Body>
 
         </Card>
-        </div>
     );
 }
 
