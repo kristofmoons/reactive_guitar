@@ -23,7 +23,7 @@ export default function TabPage() {
 
     return (
         <div style={{backgroundImage: "url('./images/landing1.png')", backgroundRepeat:"no-repeat",
-        backgroundSize: "cover" }}>>
+        backgroundSize: "cover" }}>
             <FilterSlider>
                 {
                     <Form>
